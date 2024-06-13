@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KHP</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        .navbar-nav .nav-item .nav-link {
+            color: #fff;
+        }
+        .carousel-inner img {
+            width: 100%;
+            height: 500px;
+        }
+        .footer {
+            background: #333;
+            color: #fff;
+            padding: 40px 0;
+        }
+        .footer .social-icons a {
+            color: #fff;
+            margin: 0 10px;
+            font-size: 1.5rem;
+        }
+        .section-title {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #007bff;
+        }
+        .about-section, .contact-section {
+            padding: 60px 0;
+        }
+        .about-img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .contact-section .form-control {
+            border-radius: 0;
+        }
+.footer .social-icons a:hover {
+        color: #007bff;
+    }
+	/*	.cp:hover{
+
+			background:#00000069;
+			border:solid black 3px;
+		}*/
+    </style>
+</head>
+<body>
+  
+   <header class="bg-primary py-3 ">
+    <div class="container d-flex justify-content-between align-items-center">
+        <div class="d-flex align-items-center">
+            <img style="height:50px;" src="/stock/logo1.png" alt="School Logo" class="mr-3">
+            <h1 class="text-white mb-0">KHP School</h1>
+        </div>
+    </div>
+   </header>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#academics">Academics</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#admissions">Admissions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-toggle="modal" data-target="#passwordModal">Admin</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+   <!-- Password Modal -->
+<div class="modal fade " id="passwordModal" tabindex="-1" role="dialog" aria-labelledby="passwordModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document"> <!-- Added 'modal-lg' for larger size -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" style="color: #007bff;" id="passwordModalLabel">Enter Password</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body"  style="height:350px; padding-top: 100px">
+                <form id="passwordForm">
+                    <div class="form-group">
+                        <label for="password">Enter correct password to access Admin Section</label>
+                        <input type="password" class="form-control" id="password" placeholder="Enter password">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- Carousel -->
+    <div id="schoolCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#schoolCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#schoolCarousel" data-slide-to="1"></li>
+            <li data-target="#schoolCarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="/stock/s2.webp" alt="First slide">
+           <!--     <div class="carousel-caption d-none d-md-block">
+                    <h5>Welcome to Our School</h5>
+                    <p>Providing quality education since 1990.</p>
+                </div>-->
+            </div>
+            <div class="carousel-item">
+                <img src="/stock/s1.png" alt="Second slide">
+                <div class="cp carousel-caption d-none d-md-block">
+                    <h5>Excellence in Academics</h5>
+                    <p>Learn from the best teachers.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="/stock/s3.jpg" alt="Third slide">
+                <div class="cp carousel-caption d-none d-md-block">
+                    <h5>Join Our Community</h5>
+                    <p>Building future leaders.</p>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#schoolCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#schoolCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="about-section bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2 class="section-title">About Us</h2>
+                    <p>Our school is committed to providing the best education to our students. We have a rich history and a dedicated team of educators. Our mission is to foster a love for learning and help each student achieve their full potential.</p>
+                    <p>We offer a variety of programs and extracurricular activities to ensure a well-rounded education. Our state-of-the-art facilities and resources provide the perfect environment for academic excellence and personal growth.</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="/stock/school-building.jpg"  alt="About Image" class="about-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Academics Section -->
+    <section id="academics" class="py-5">
+        <div class="container">
+            <h2 class="section-title text-center">Academics</h2>
+            <p class="text-center">We offer a comprehensive curriculum that caters to the needs and interests of all our students. Our academic programs are designed to promote critical thinking, creativity, and lifelong learning.</p>
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>Primary Education</h3>
+                    <p>Our primary education program lays a strong foundation for young learners. We focus on developing basic literacy and numeracy skills, as well as fostering social and emotional growth.</p>
+                </div>
+                <div class="col-md-4">
+                    <h3>Secondary Education</h3>
+                    <p>Our secondary education program prepares students for higher education and future careers. We offer a wide range of subjects and encourage students to pursue their interests and passions.</p>
+                </div>
+                <div class="col-md-4">
+                    <h3>Advanced Programs</h3>
+                    <p>We offer advanced programs for students who wish to challenge themselves and excel in specific areas. Our advanced programs include advanced placement courses, honors classes, and specialized training.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Admissions Section -->
+    <section id="admissions" class="bg-light py-5">
+        <div class="container">
+            <h2 class="section-title text-center">Admissions</h2>
+            <p class="text-center">Join our vibrant community of learners. We have a simple and transparent admission process. Apply now and become a part of our family.</p>
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Admission Requirements</h3>
+                    <p>Our admission requirements are designed to ensure that we admit students who are prepared for our rigorous academic programs. Applicants must submit an application form, academic transcripts, and a personal statement. Additionally, we may require an interview and placement tests.</p>
+                </div>
+                <div class="col-md-6">
+                    <h3>How to Apply</h3>
+                    <p>Applying to our school is easy. You can fill out our online application form or visit our admissions office in person. Our admissions team is here to help you with any questions you may have and guide you through the process.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section py-5">
+        <div class="container">
+            <h2 class="section-title text-center">Contact Us</h2>
+            <p class="text-center">Have questions? Get in touch with us. We’re here to help.</p>
+            <div class="row">
+                <div class="col-md-8 mx-auto">
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea class="form-control" id="message" rows="4" placeholder="Enter your message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-left">
+                    <p>&copy; 2024 My School. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-right">
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        document.getElementById('passwordForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const password = document.getElementById('password').value;
+            if (password === 'dada') {
+                window.location.href = '/allStud';
+            } else {
+                alert('Incorrect password. Please try again.');
+            }
+        });
+    </script>
+</body>
+</html>
